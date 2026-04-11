@@ -1,0 +1,8 @@
+name: clock_24h
+title: 24H Clock
+description: Displays the time in the Agent Zero UI in 24-hour format instead of 12-hour AM/PM. Persists across reloads and system updates.
+version: 1.0.0
+settings_sections: []
+per_project_config: false
+per_agent_config: false
+always_enabled: true
