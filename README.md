@@ -6,7 +6,7 @@ A lightweight Agent Zero plugin that forces the WebUI header clock to display ti
 
 ## Features
 
-- ✅ **Always-on** — uses `always_enabled: true` so no manual activation needed
+- ✅ **Toggle ON/OFF** — use the plugin switch in the Plugin Hub to enable or disable at any time
 - ✅ **Update-proof** — lives in `usr/plugins/`, survives A0 system updates
 - ✅ **Zero config** — works out of the box, no settings to tweak
 - ✅ **Persistent** — survives UI reloads via the `initFw_end` lifecycle hook
@@ -21,22 +21,41 @@ A lightweight Agent Zero plugin that forces the WebUI header clock to display ti
 
 The date display is preserved unchanged.
 
+## ⚠️ Important: Reload Required
+
+After installing, enabling, or disabling this plugin, you **must reload the page** for the change to take effect:
+
+> **Hard reload the page:** `Ctrl + Shift + R` (Windows/Linux) or `Cmd + Shift + R` (Mac)
+
+If the clock still shows 12-hour format after a hard reload, **restart Agent Zero** (the backend caches plugin state at startup).
+
 ## Installation
 
 ### From Plugin Hub
-Search for **24H Clock** in the Agent Zero Plugin Hub and click Install.
+1. Open the **Plugins** dialog in Agent Zero
+2. Go to the **Browse** tab or click **Install**
+3. Search for **24H Clock** and click **Install**
+4. **Hard reload** the page (`Ctrl + Shift + R`)
 
 ### Manual
 1. Clone this repo into your Agent Zero plugins directory:
    ```bash
    git clone https://github.com/jphermans/a0-plugin-clock-24h.git /path/to/agent-zero/usr/plugins/clock_24h
    ```
-2. **Restart** Agent Zero to pick up the new plugin
-3. **Hard reload** the WebUI (`Ctrl+Shift+R`)
+2. **Restart** Agent Zero
+3. **Hard reload** the WebUI (`Ctrl + Shift + R`)
+
+## Toggle ON/OFF
+
+Use the **ON/OFF switch** in the Plugin Hub plugin list:
+- **ON** → Time displays in 24-hour format
+- **OFF** → Time reverts to the default 12-hour AM/PM format
+
+> Remember to **hard reload** the page after toggling!
 
 ## Uninstallation
 
-Remove the plugin folder and restart:
+Remove the plugin folder, restart, and reload:
 ```bash
 rm -rf /path/to/agent-zero/usr/plugins/clock_24h
 ```
@@ -45,7 +64,7 @@ rm -rf /path/to/agent-zero/usr/plugins/clock_24h
 
 ```
 clock_24h/
-├── plugin.yaml                              # Plugin manifest (always_enabled)
+├── plugin.yaml                              # Plugin manifest
 ├── README.md                                 # This file
 ├── LICENSE                                   # MIT License
 ├── docs/
