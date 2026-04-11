@@ -1,6 +1,6 @@
 # 🕐 24H Clock Plugin for Agent Zero
 
-![24H Clock Banner](docs/banner.webp)
+![24H Clock Banner](docs/banner.png)
 
 A lightweight Agent Zero plugin that forces the WebUI header clock to display time in **24-hour format** (e.g. `14:35:07`) instead of the default 12-hour AM/PM format.
 
@@ -24,18 +24,19 @@ The date display is preserved unchanged.
 ## Installation
 
 ### From Plugin Hub
-*Coming soon*
+Search for **24H Clock** in the Agent Zero Plugin Hub and click Install.
 
 ### Manual
 1. Clone this repo into your Agent Zero plugins directory:
    ```bash
    git clone https://github.com/jphermans/a0-plugin-clock-24h.git /path/to/agent-zero/usr/plugins/clock_24h
    ```
-2. **Hard reload** the Agent Zero WebUI (`Ctrl+Shift+R`)
+2. **Restart** Agent Zero to pick up the new plugin
+3. **Hard reload** the WebUI (`Ctrl+Shift+R`)
 
 ## Uninstallation
 
-Remove the plugin folder and reload:
+Remove the plugin folder and restart:
 ```bash
 rm -rf /path/to/agent-zero/usr/plugins/clock_24h
 ```
@@ -48,7 +49,8 @@ clock_24h/
 ├── README.md                                 # This file
 ├── LICENSE                                   # MIT License
 ├── docs/
-│   └── banner.webp                           # Banner image
+│   ├── banner.png                            # Banner image
+│   └── thumbnail.jpg                         # Plugin Hub thumbnail
 └── extensions/
     └── webui/
         └── initFw_end/
