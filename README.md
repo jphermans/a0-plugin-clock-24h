@@ -79,7 +79,7 @@ clock_24h/
 
 ## Compatibility
 
-- Agent Zero v0.7+
+- Agent Zero v1.0+
 - All modern browsers (Chrome, Firefox, Safari, Edge)
 
 ## License
