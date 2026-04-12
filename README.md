@@ -65,6 +65,7 @@ rm -rf /path/to/agent-zero/usr/plugins/clock_24h
 ```
 clock_24h/
 ├── plugin.yaml                              # Plugin manifest
+├── icon.png                                  # Plugin Hub icon
 ├── README.md                                 # This file
 ├── LICENSE                                   # MIT License
 ├── docs/
