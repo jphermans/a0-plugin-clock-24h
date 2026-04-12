@@ -65,12 +65,14 @@ rm -rf /path/to/agent-zero/usr/plugins/clock_24h
 ```
 clock_24h/
 ├── plugin.yaml                              # Plugin manifest
-├── icon.png                                  # Plugin Hub icon
+├── icon.png                                  # Source icon
 ├── README.md                                 # This file
 ├── LICENSE                                   # MIT License
+├── webui/
+│   └── thumbnail.png                         # Plugin Hub thumbnail
 ├── docs/
 │   ├── banner.png                            # Banner image
-│   └── thumbnail.jpg                         # Plugin Hub thumbnail
+│   └── thumbnail.jpg                         # Legacy thumbnail
 └── extensions/
     └── webui/
         └── initFw_end/
