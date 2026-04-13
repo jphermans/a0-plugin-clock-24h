@@ -1,0 +1,8 @@
+title: 24H Clock
+description: Displays the time in the Agent Zero UI in 24-hour format instead of 12-hour AM/PM. Persists across reloads and system updates.
+github: https://github.com/jphermans/a0-plugin-clock-24h
+tags:
+  - ui
+  - web
+screenshots:
+  - https://raw.githubusercontent.com/jphermans/a0-plugin-clock-24h/main/docs/banner.png
